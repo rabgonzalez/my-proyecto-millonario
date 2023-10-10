@@ -103,8 +103,7 @@ To https://github.com/rabgonzalez/my-proyecto-millonario
 <details>
 <summary>salida</summary>
 
-```code
-
+```
 ```
 </details>
 
@@ -113,11 +112,44 @@ To https://github.com/rabgonzalez/my-proyecto-millonario
 <summary>salida</summary>
 
 ```code
+[main af95674] añadido fichero .gitignore
+ 4 files changed, 95 insertions(+), 12 deletions(-)
+ create mode 100644 .gitignore
+ delete mode 100644 images/ej1-ets.png
+ delete mode 100644 images/ej1.1-ets.png
+```
+</details>
+
+> __Pregunta2:__ Los ficheros y directorios que han sido añadidos a .gitignore avisan a git de que deben de ser ignorados a la hora de subirlos al repositorio en la nube
+
+## Añadir fichero 1.txt
+- Añadir fichero 1.txt al repositorio local.
+- __touch 1.txt__
+<details>
+<summary>salida</summary>
+
+```
+```
+</details>
+
+- __git add .__
+<details>
+<summary>salida</summary>
+
+```code
 
 ```
 </details>
 
-> __Pregunta2:__ 
+- __git commit -m "añadido 1.txt"__
+<details>
+<summary>salida</summary>
+
+```code
+
+```
+</details>
+
 
 
 </div>
