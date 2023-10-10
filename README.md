@@ -136,8 +136,7 @@ To https://github.com/rabgonzalez/my-proyecto-millonario
 <details>
 <summary>salida</summary>
 
-```code
-
+```
 ```
 </details>
 
@@ -146,10 +145,13 @@ To https://github.com/rabgonzalez/my-proyecto-millonario
 <summary>salida</summary>
 
 ```code
-
+[main 85d97f7] añadido 1.txt
+ 2 files changed, 34 insertions(+), 2 deletions(-)
+ create mode 100644 1.txt
 ```
 </details>
 
+> __Pregunta3:__ La acción ___git add___ prepara todos los cambios dados en un fichero (git add nombre_fichero) para subirlos a la nube, y ___git commit___ crea un registro que anuncia los cambios que se han dado.
 
 
 </div>
