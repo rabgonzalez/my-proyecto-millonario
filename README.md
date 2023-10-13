@@ -291,7 +291,7 @@ Your branch is ahead of 'origin/main' by 2 commits.
 - git add .
 <details>
 <summary>salida</summary>
-```code
+```
 ```
 </details>
 
@@ -299,6 +299,8 @@ Your branch is ahead of 'origin/main' by 2 commits.
 <details>
 <summary>salida</summary>
 ```code
+[main 6835141] hola en 1.txt
+ 2 files changed, 114 insertions(+), 1 deletion(-)
 ```
 </details>
 
