@@ -216,8 +216,43 @@ M       README.md
 <details>
 <summary>salida</summary>
 ```code
-
+[v0.2 5f3a0e6] añadido 2.txt
+ 2 files changed, 66 insertions(+)
+ create mode 100644 2.txt
 ```
 </details>
+
+> __Pregunta5:__ Crear distintas ramas es útil para hacer pruebas de nuestro código sin modificar la version original (rama main/master) o para no subir al repositorio remoto ciertos cambios, de modo que si estas ramas funcionan podemos usar un ___git merge___ y traerlas a nuestra rama principal. O si no funcionan puedes usar un ___git branch -D___ para borrar la rama. 
+
+## Crear rama remota v0.2
+- 1. Subir los cambios al reposiorio remoto.
+- git push origin v0.2
+<details>
+<summary>salida</summary>
+```code
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 843 bytes | 843.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'v0.2' on GitHub by visiting:
+remote:      https://github.com/rabgonzalez/my-proyecto-millonario/pull/new/v0.2
+remote:
+To https://github.com/rabgonzalez/my-proyecto-millonario
+ * [new branch]      v0.2 -> v0.2
+```
+</details>
+
+## Merge directo
+- 1. Posicionarse en la rama master/main según sea tu rama principal.
+- git checkout master
+
+
+- 1. Hacer un merge de la rama v0.2 en la rama master/main.
+- git merge v0.2 -m "merge v0.2 sin conflictos"
+
 
 </div>
