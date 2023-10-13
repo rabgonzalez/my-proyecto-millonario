@@ -180,6 +180,7 @@ Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 - git branch v0.2
 <details>
 <summary>salida</summary>
+
 ```
 ```
 </details>
@@ -188,6 +189,7 @@ Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 - git checkout v0.2
 <details>
 <summary>salida</summary>
+
 ```code
 Switched to branch 'v0.2'
 M       README.md
@@ -199,6 +201,7 @@ M       README.md
 - touch 2.txt
 <details>
 <summary>salida</summary>
+
 ```
 ```
 </details>
@@ -208,6 +211,7 @@ M       README.md
 - git add .
 <details>
 <summary>salida</summary>
+
 ```
 ```
 </details>
@@ -215,6 +219,7 @@ M       README.md
 - git commit -m "añadido 2.txt"
 <details>
 <summary>salida</summary>
+
 ```code
 [v0.2 5f3a0e6] añadido 2.txt
  2 files changed, 66 insertions(+)
@@ -229,6 +234,7 @@ M       README.md
 - git push origin v0.2
 <details>
 <summary>salida</summary>
+
 ```code
 Enumerating objects: 6, done.
 Counting objects: 100% (6/6), done.
@@ -256,6 +262,7 @@ Your branch is up to date with 'origin/main'.
 - git merge v0.2 -m "merge v0.2 sin conflictos"
 <details>
 <summary>salida</summary>
+
 ```code
  Updating c307e1b..f6720c6
  Fast-forward (no commit created; -m option ignored)
@@ -273,6 +280,7 @@ Your branch is up to date with 'origin/main'.
 - git checkout master
 <details>
 <summary>salida</summary>
+
 ```code
 Already on 'main'
 M       README.md
@@ -284,6 +292,7 @@ Your branch is ahead of 'origin/main' by 2 commits.
 - echo "Hola" >> 1.txt
 <details>
 <summary>salida</summary>
+
 ```
 ```
 </details>
@@ -291,6 +300,7 @@ Your branch is ahead of 'origin/main' by 2 commits.
 - git add .
 <details>
 <summary>salida</summary>
+
 ```
 ```
 </details>
@@ -298,6 +308,7 @@ Your branch is ahead of 'origin/main' by 2 commits.
 - git commit -m "hola en 1.txt"
 <details>
 <summary>salida</summary>
+
 ```code
 [main 6835141] hola en 1.txt
  2 files changed, 114 insertions(+), 1 deletion(-)
@@ -308,6 +319,7 @@ Your branch is ahead of 'origin/main' by 2 commits.
 - git checkout v0.2
 <details>
 <summary>salida</summary>
+
 ```code
  Switched to branch 'v0.2'
 ```
@@ -316,6 +328,7 @@ Your branch is ahead of 'origin/main' by 2 commits.
 - echo "Adios" >> 1.txt
 <details>
 <summary>salida</summary>
+
 ```
 ```
 </details>
@@ -323,6 +336,7 @@ Your branch is ahead of 'origin/main' by 2 commits.
 - git add .
 <details>
 <summary>salida</summary>
+
 ```
 ```
 </details>
@@ -330,6 +344,7 @@ Your branch is ahead of 'origin/main' by 2 commits.
 - git commit -m "adios en 1.txt"
 <details>
 <summary>salida</summary>
+
 ```code
  [v0.2 e96cee7] adios en 1.txt
  1 file changed, 0 insertions(+), 0 deletions(-)
@@ -340,6 +355,7 @@ Your branch is ahead of 'origin/main' by 2 commits.
 - git checkout master
 <details>
 <summary>salida</summary>
+
 ```code
  Switched to branch 'main'
  Your branch is ahead of 'origin/main' by 4 commits.
@@ -350,6 +366,7 @@ Your branch is ahead of 'origin/main' by 2 commits.
 - git merge v0.2
 <details>
 <summary>salida</summary>
+
 ```code
  warning: Cannot merge binary files: 1.txt (HEAD vs. v0.2)
  Auto-merging 1.txt
@@ -361,23 +378,100 @@ Your branch is ahead of 'origin/main' by 2 commits.
 - vim 1.txt
 <details>
 <summary>salida</summary>
-```code
+
+```
 ```
 </details>
 
 - git add .
 <details>
 <summary>salida</summary>
-```code
+
+```
 ```
 </details>
 
 - git commit -m "arreglado merge en 1.txt"
 <details>
 <summary>salida</summary>
+
 ```code
+ On branch main
+ Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+ nothing to commit, working tree clean
 ```
 </details>
 
+## Listado de ramas
+- 1. Listar las ramas con merge y las ramas sin merge.
+- git branch --merged
+<details>
+<summary>salida</summary>
 
+```code
+* main
+```
+</details>
+
+- git branch --no-merged
+<details>
+<summary>salida</summary>
+
+```code
+v0.2
+```
+</details>
+
+## Borrar rama
+- 1. Crear un tag v0.2
+- git tag v0.2
+<details>
+<summary>salida</summary>
+
+```
+```
+</details>
+
+- 1. Borrar la rama v0.2
+- git branch -d v0.2
+<details>
+<summary>salida</summary>
+
+```code
+ Deleted branch v0.2 (was e96cee7).
+```
+</details>
+
+## Listado de cambios
+- 1. Listar los distintos commits con sus ramas y sus tags.
+- git config --global alias.list 'log --oneline --decorate --graph --all'
+<details>
+<summary>salida</summary>
+
+```
+```
+</details>
+
+- git list
+<details>
+<summary>salida</summary>
+
+```code
+   *   18f4e1a (HEAD -> main, tag: v0.2) borramos texto 1.txt
+   |\  
+   | * e96cee7 adios en 1.txt
+   * | c79924d hola en 1.txt
+   * | 6835141 hola en 1.txt
+   |/  
+   * f6720c6 (origin/v0.2) añadir 2.txt
+   * 5f3a0e6 añadido 2.txt
+   * c307e1b (tag: v0.1, origin/main, origin/HEAD) terminar en casa
+   * 85d97f7 añadido 1.txt
+   * af95674 añadido fichero .gitignore
+   * edf7734 commit inicial
+   * d9f4220 Initial commit
+```
+</details>
 </div>
