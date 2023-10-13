@@ -249,10 +249,123 @@ To https://github.com/rabgonzalez/my-proyecto-millonario
 ## Merge directo
 - 1. Posicionarse en la rama master/main según sea tu rama principal.
 - git checkout master
-
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
 
 - 1. Hacer un merge de la rama v0.2 en la rama master/main.
 - git merge v0.2 -m "merge v0.2 sin conflictos"
+<details>
+<summary>salida</summary>
+```code
+ Updating c307e1b..f6720c6
+ Fast-forward (no commit created; -m option ignored)
+ 2.txt     | Bin 0 -> 8 bytes
+ README.md | 101 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 101 insertions(+)
+ create mode 100644 2.txt
+```
+</details> 
+
+> __Pregunta6:__ No se debría de haber producido ningún conflicto ya que la información de ambas ramas ha sido actualizada y guardada, de modo que al hacer el comando ___git merge___ no se va a perder información.
+
+## Merge con conflicto
+- 1. En la rama maste/main poner Hola en el fichero 1.txt y hacer commit.
+- git checkout master
+<details>
+<summary>salida</summary>
+```code
+Already on 'main'
+M       README.md
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+```
+</details>
+
+- echo "Hola" >> 1.txt
+<details>
+<summary>salida</summary>
+```
+```
+</details>
+
+- git add .
+<details>
+<summary>salida</summary>
+```code
+```
+</details>
+
+- git commit -m "hola en 1.txt"
+<details>
+<summary>salida</summary>
+```code
+```
+</details>
+
+- 1. Posicionarse en la rama v0.2 y poner Adios en el fichero "1.txt" y hacer commit.
+- git checkout v0.2
+<details>
+<summary>salida</summary>
+```code
+```
+</details>
+
+- echo "Adios" >> 1.txt
+<details>
+<summary>salida</summary>
+```code
+```
+</details>
+
+- git add .
+<details>
+<summary>salida</summary>
+```code
+```
+</details>
+
+- git commit -m "adios en 1.txt"
+<details>
+<summary>salida</summary>
+```code
+```
+</details>
+
+- 1. Posicionarse de nuevo en la rama master/main y hacer un merge con la rama v0.2
+- git checkout master
+<details>
+<summary>salida</summary>
+```code
+```
+</details>
+
+- git merge v0.2
+<details>
+<summary>salida</summary>
+```code
+```
+</details>
+
+- vim 1.txt
+<details>
+<summary>salida</summary>
+```code
+```
+</details>
+
+- git add .
+<details>
+<summary>salida</summary>
+```code
+```
+</details>
+
+- git commit -m "arreglado merge en 1.txt"
+<details>
+<summary>salida</summary>
+```code
+```
+</details>
 
 
 </div>
