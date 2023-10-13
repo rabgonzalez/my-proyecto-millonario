@@ -309,20 +309,21 @@ Your branch is ahead of 'origin/main' by 2 commits.
 <details>
 <summary>salida</summary>
 ```code
+ Switched to branch 'v0.2'
 ```
 </details>
 
 - echo "Adios" >> 1.txt
 <details>
 <summary>salida</summary>
-```code
+```
 ```
 </details>
 
 - git add .
 <details>
 <summary>salida</summary>
-```code
+```
 ```
 </details>
 
@@ -330,6 +331,8 @@ Your branch is ahead of 'origin/main' by 2 commits.
 <details>
 <summary>salida</summary>
 ```code
+ [v0.2 e96cee7] adios en 1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
 ```
 </details>
 
@@ -338,6 +341,9 @@ Your branch is ahead of 'origin/main' by 2 commits.
 <details>
 <summary>salida</summary>
 ```code
+ Switched to branch 'main'
+ Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
 ```
 </details>
 
@@ -345,6 +351,10 @@ Your branch is ahead of 'origin/main' by 2 commits.
 <details>
 <summary>salida</summary>
 ```code
+ warning: Cannot merge binary files: 1.txt (HEAD vs. v0.2)
+ Auto-merging 1.txt
+ CONFLICT (content): Merge conflict in 1.txt
+ Automatic merge failed; fix conflicts and then commit the result.
 ```
 </details>
 
