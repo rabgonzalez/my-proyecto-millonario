@@ -153,5 +153,71 @@ To https://github.com/rabgonzalez/my-proyecto-millonario
 
 > __Pregunta3:__ La acción ___git add___ prepara todos los cambios dados en un fichero (git add nombre_fichero) para subirlos a la nube, y ___git commit___ crea un registro que anuncia los cambios que se han dado.
 
+## Crear el tag v0.1
+- 1. Crear un tag v0.1
+<details>
+<summary>salida</summary>
+
+```
+```
+</details> 
+
+## Subir el tag v0.1
+<details>
+<summary>salida</summary>
+
+```code
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+ To https://github.com/rabgonzalez/my-proyecto-millonario
+ * [new tag]         v0.1 -> v0.1
+```
+</details> 
+
+> __Pregunta4:__ un tag es un historial de cambios que se almacenan en versiones para poder gestionar su cronología de forma más sencilla.
+
+## Crear una rama v0.2
+- Crear una rama v0.2.
+- git branch v0.2
+<details>
+<summary>salida</summary>
+```
+```
+</details>
+
+- Posiciona tu carpeta de trabajo en esta rama.
+- git checkout v0.2
+<details>
+<summary>salida</summary>
+```code
+Switched to branch 'v0.2'
+M       README.md
+```
+</details>
+
+## Añadir fichero 2.txt
+- Añadir un fichero 2.txt en la rama v0.2.
+- touch 2.txt
+<details>
+<summary>salida</summary>
+```
+```
+</details>
+
+> Nota: en windows utilize el comando echo . > 2.txt 
+
+- git add .
+<details>
+<summary>salida</summary>
+```
+```
+</details>
+
+- git commit -m "añadido 2.txt"
+<details>
+<summary>salida</summary>
+```code
+
+```
+</details>
 
 </div>
