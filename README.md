@@ -474,4 +474,65 @@ v0.2
    * d9f4220 Initial commit
 ```
 </details>
+
+---
+
+# Manipulación avanzados de Git, GitHub y Markdown 
+## Crear una rama v0.2
+- Crear una rama v0.2.
+- git branch v0.2
+<details>
+<summary>salida</summary>
+
+```
+```
+</details>
+
+- Posiciona tu carpeta de trabajo en esta rama.
+- git checkout v0.2
+<details>
+<summary>salida</summary>
+
+```code
+M       README.md
+Cambiado a rama 'v0.2'
+```
+</details>
+
+## Añadir fichero 2.txt
+- Añadir un fichero 2.txt en la rama v0.2.
+- touch 2.txt
+<details>
+<summary>salida</summary>
+
+```
+```
+</salida>
+
+## Crear rama remota v0.2
+- Subir los cambios al reposiorio remoto.
+- git add .
+<details>
+<summary>salida</summary>
+
+```code
+```
+</details>
+
+- git commit -m "rama remota v0.2"
+<details>
+<summary>salida</summary>
+
+```code
+```
+</details>
+
+- git push
+<details>
+<summary>salida</summary>
+
+```code
+```
+</details>
+
 </div>
